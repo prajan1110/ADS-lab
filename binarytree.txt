@@ -1,0 +1,31 @@
+-in order traversal checking the binary search tree property 
+-pre order in directories 
+-post order : Garbage collection 
+
+binary search tree 
+- left child value less than parent 
+- right child value greater than parent 
+
+Grand child is the last row it doesen't have any nodes after it
+
+if a node has two children then each of its child may have further children 
+2 nd level descendats are referred grand children 
+Grand child of 1 are 4 5 6 7 ,
+Node 2 has no grand children 
+The grand children for node 3 is 9 , 10 
+
+
+        1
+      /   \ 
+     2     3
+    /\     /\
+   4 5    6  7 
+         / \
+        9  10
+How to find grand children:
+- start from root 
+- if node found 
+     - collect all the children for that node 
+     - collect all the children for those children 
+- if node not found 
+     - exit
